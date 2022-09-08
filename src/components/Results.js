@@ -1,15 +1,15 @@
-import React from 'react';
-import './App.css';
-import SearchBar from './components/SearchBar';
-import Results from './components/Results';
-function App() {
-  return (
-    <div>
-      <h1>Repo Search</h1>
-  <SearchBar/>
-  <Results/>
-    </div>
-  );
+import React from "react";
+
+const Results = (props)=>{
+    const{repos}=props
+    console.log('repos is ',  repos);
+
+const listRepos = repos.map((item)=>{
+    <li>{item}</li>
+})
+
+    return 
+
 }
 
-export default App;
+export default Results
