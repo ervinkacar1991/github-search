@@ -16,7 +16,7 @@ setSearchInput(e.target.value)
             setRepos(result)
         } catch(err){
             console.log(err);
-        }  
+        }   
     }
 
 
